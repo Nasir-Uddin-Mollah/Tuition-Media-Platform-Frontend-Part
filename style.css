@@ -1,0 +1,488 @@
+/*********************************
+Body and some general stuff
+*********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01);
+    text-shadow: rgba(0, 0, 0, .01);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #f8f9fa;
+    color: #a5a5a5;
+}
+
+div {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+.super_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*********************************
+Header
+*********************************/
+
+.header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.025);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.header.scrolled {
+    top: -51px;
+}
+
+/*********************************
+3.1 Top Bar
+*********************************/
+
+.top_bar {
+    width: 100%;
+    background: #FFFFFF;
+    border-bottom: solid 2px #ebebeb;
+    z-index: 10;
+}
+
+.top_bar_container {
+    width: 100%;
+}
+
+.top_bar_content {
+    height: 49px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+}
+
+.top_bar_title {
+    margin-right: 10px;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+.top_bar_social {
+    display: inline-block;
+    margin-left: 79px;
+    margin-right: -6px;
+}
+
+.social_title {
+    margin-right: -15px;
+}
+
+.top_bar_social ul {
+    display: inline-block;
+}
+
+.top_bar_social ul li {
+    display: inline-block;
+}
+
+.top_bar_social ul li a i {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 6px;
+}
+
+.top_bar_social ul li a i:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+
+
+/*********************************
+navbar
+*********************************/
+
+.nav_bar {
+    width: 100%;
+    background: #FFFFFF;
+    /* z-index: 10; */
+    /* border-bottom: 2px solid #ebebeb; */
+}
+
+.nav_bar_container {
+    width: 100%;
+}
+
+.navbar-brand {
+    color: blue;
+    font-weight: 800;
+}
+
+.navbar-brand:hover {
+    color: blue;
+    font-weight: 800;
+}
+
+.nav-item {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    color: rgba(0, 0, 0, 1);
+
+}
+
+#user-name {
+    font-size: 1rem;
+    font-weight: 800;
+    color: blue;
+}
+
+
+/*********************************
+Home
+*********************************/
+
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home_content {
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    z-index: 1;
+
+    .span {
+        color: #F97316;
+    }
+
+}
+
+.home_title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.home_button a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.home_button a:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 50vh;
+    }
+
+    .home_title {
+        font-size: 1.8rem;
+    }
+
+    .home_button a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/*********************************
+Registration form
+*********************************/
+
+#registration-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registration-form h1 {
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#registration-form .form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+#registration-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+#registration-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#registration-form button {
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#registration-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/*********************************
+Login form
+*********************************/
+
+#login-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h1 {
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#login-form .form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+#login-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+#login-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#login-form button {
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+
+.all-tuitions h2 {
+    color: blue;
+    font-size: 2.5rem;
+}
+
+
+
+/*********************************
+profile page
+*********************************/
+
+.profile-main{
+    min-height: 265px;
+}
+
+/* Profile Info Card */
+.card-title {
+    font-size: 1.rem;
+}
+
+.change-password-btn {
+    background-color: blue;
+    font-weight: bold;
+}
+
+#change-password-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#change-password-container h5 {
+    font-weight: 800;
+    color: blue;
+}
+
+#change-password-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#change-password-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px
+}
+
+#change-password-form .form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+#change-password-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#change-password-form button {
+    width: 100%;
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#change-password-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Applied Tuitions Section */
+
+#applied-tuitions .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: blue;
+}
+
+#notuitions {
+    display: none;
+}
+
+.dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/*********************************
+Tuition Details
+*********************************/
+
+.tuition-details h2 {
+    font-weight: 900;
+    color: blue;
+}
+
+.tuition-details ul .card-link {
+    font-weight: 900;
+    color: blue;
+}
+
+
+.reviews h3{
+    font-weight: 800;
+    color: blue;
+}
+
+.reviews h5{
+    font-weight: 800;
+    color: blue;
+}
+
+.reviews h4{
+    font-weight: 800;
+    color: blue;
+}
+
+#review-form button{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#review-form button:hover{
+    background-color: #0056b3;
+}
+
+
+
+/*********************************
+Footer
+*********************************/
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
